@@ -6,7 +6,7 @@ html{
 }
 
 *,
-*::before
+*::before,
 *::after{
 box-sizing: inherit;
 }
@@ -18,10 +18,10 @@ body{
   padding: 0;
   margin: 0;
   font-family: "Arial",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 28px;
   background-color: #fff;
-  color: black;
+  color: #242A45;
 }
 
 img{
@@ -31,7 +31,7 @@ img{
 
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1204px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
