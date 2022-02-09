@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
-      url("../fonts/Rubik-Regular.woff") format("woff");
+  url("../fonts/Rubik-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,12 +11,17 @@
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
-      url("../fonts/Rubik-Medium.woff") format("woff");
+  url("../fonts/Rubik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
+:root{
+  --color-txt:  #242A45;
+  --red-clr: #FA5959;
+  --blue-clr: #5267DF;
+}
 
 html{
   height: 100%;
@@ -27,7 +32,7 @@ html{
 *,
 *::before,
 *::after{
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body{
@@ -37,10 +42,11 @@ body{
   padding: 0;
   margin: 0;
   font-family: "Rubik", "Arial",sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   background-color: #fff;
-  color: #242A45;
+  color: var(--color-txt);
 }
 
 img{
@@ -59,4 +65,323 @@ img{
 
 .main-content{
   flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* BUTTON */
+.button,
+.button-primary{
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.button {
+  padding: 8px 28px 7px 30px;
+  text-transform: uppercase;
+  background-color: var(--red-clr);
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+}
+
+.button:hover{
+  background-color: #fff;
+  border-color: var(--red-clr);
+  color: var(--red-clr);
+}
+
+.button:active{
+  opacity: 0.6;
+}
+
+.button-primary{
+  padding: 8px 22px;
+  background-color:var(--blue-clr);
+  font-size: 14px;
+line-height: 28px;
+letter-spacing: 0.25px;
+}
+
+.button-grey{
+  background-color: #F7F7F7;
+  color: var(--color-txt);
+  opacity: 0.75;
+  margin-left: 24px;
+}
+
+.button-grey:hover,
+.button-primary:hover{
+  background-color: #fff;
+}
+
+.button-primary:hover{
+  border-color: var(--blue-clr);
+  color: var(--blue-clr);
+}
+
+.button-grey:hover{
+  border-color: #5B6074;
+  color: var(--color-txt);
+  opacity: 0.75;
+}
+
+.button-primary:active{
+  opacity: 0.6;
+}
+/* SITE-HEADER */
+
+.site-header {
+  padding-top: 48px;
+  padding-bottom: 45px;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: block;
+  margin-right: auto;
+}
+
+.logo-img {
+  display: block;
+  width: 149px;
+  height: 25px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.site-nav {
+  margin-right: 48px;
+}
+
+.site-nav-lists {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-item:not(:last-child){
+  margin-right: 44px;
+}
+
+.site-nav-link{
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--color-txt);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.site-nav-link:hover{
+  color: var(--red-clr);
+}
+
+.site-nav-link:active{
+  opacity: 0.6;
+}
+
+/* SITE-HERO */
+.site-hero {
+padding-top: 140px;
+padding-bottom: 123px;
+background-image: url("../img/bookmark-manager.svg"),
+                  url("../img/Rectangle.png");
+background-repeat: no-repeat;
+background-position: left calc(50% + 350px) bottom 40px,
+                    left calc(50% + 700px) bottom;
+}
+
+.site-hero-content {
+  max-width: 540px;
+  width: 100%;
+}
+
+.site-hero-header {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+line-height: 52px;
+letter-spacing: -0.15px;
+}
+
+.site-hero-text {
+  opacity: 0.5;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+/* SITE-FEATURES */
+.site-features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/Rectangle.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 700px) bottom;
+}
+
+.site-features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-features-text-wrapper{
+  max-width: 540px;
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-features-header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+font-size: 32px;
+line-height: 52px;
+letter-spacing: -0.1px;
+}
+
+.site-features-text {
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.site-feaures-info {
+  max-width: 445px;
+  width: 100%;
+}
+
+.site-features-info-header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+font-size: 32px;
+line-height: 52px;
+letter-spacing: -0.1px;
+}
+
+.site-features-info-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  opacity: 0.5;
+}
+
+.features-slideshow {
+}
+
+.features-navbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.feaatures-navbtn-wrap {
+  max-width: 243px;
+  width: 100%;
+  padding: 0 10px 25px;
+  text-align: center;
+  border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
+  margin-bottom: 73px;
+}
+
+.features-navbtn-active{
+  border-bottom: 4px solid var(--red-clr);
+}
+
+.features-navbtn-active .features-button{
+opacity: 1;
+}
+
+.features-navbtn-active .features-button:hover{
+color: var(--color-txt);
+}
+
+.features-navbtn-active .features-button:active{
+  opacity: 1;
+  }
+
+.features-button {
+  padding: 2px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+line-height: 17px;
+letter-spacing: 0.5px;
+color: var(--color-txt);
+mix-blend-mode: normal;
+opacity: 0.75;
+cursor: pointer;
+}
+
+.features-button:hover{
+  color: var(--red-clr);
+}
+
+.features-button:active{
+  opacity: 0.6;
+}
+
+.features-slide {
+  display: flex;
+  align-items: center;
+}
+
+.features-slide-img{
+  display: block;
+  width: 536px;
+  height: 393px;
+  object-fit: contain;
+  margin-right: 125px;
+}
+
+.features-slide-content {
+  max-width: 445px;
+  width: 100%;
+}
+
+.features-slide-header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+font-size: 32px;
+line-height: 52px;
+letter-spacing: -0.1px;
+}
+
+.features-slide-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  opacity: 0.5;
 }
