@@ -311,9 +311,6 @@ img{
   opacity: 0.5;
 }
 
-.features-slideshow {
-}
-
 .features-navbtn {
   display: flex;
   justify-content: center;
@@ -535,6 +532,7 @@ img{
   border: none;
   color: var(--blue-clr);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .down-img {
