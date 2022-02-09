@@ -147,6 +147,32 @@ letter-spacing: 0.25px;
 .button-primary:active{
   opacity: 0.6;
 }
+
+/* SITE-HEADING-TEXT */
+.site-header-text-wrapper{
+  max-width: 540px;
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+font-size: 32px;
+line-height: 52px;
+letter-spacing: -0.1px;
+}
+
+.site-text {
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 /* SITE-HEADER */
 
 .site-header {
@@ -254,31 +280,6 @@ letter-spacing: -0.15px;
   align-items: center;
 }
 
-.site-features-text-wrapper{
-  max-width: 540px;
-  width: 100%;
-  margin-bottom: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.site-features-header {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-weight: 500;
-font-size: 32px;
-line-height: 52px;
-letter-spacing: -0.1px;
-}
-
-.site-features-text {
-  opacity: 0.5;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 .site-feaures-info {
   max-width: 445px;
   width: 100%;
@@ -384,4 +385,72 @@ letter-spacing: -0.1px;
   margin-top: 0;
   margin-bottom: 32px;
   opacity: 0.5;
+}
+
+.download {
+  padding-top: 149px;
+  padding-bottom: 149px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-content {
+  margin-bottom: 48px;
+}
+
+.download-extension {
+  display: flex;
+}
+
+.download-extension-card {
+  max-width: 280px;
+  padding: 49px 24px 24px;
+  background-image: url("../img/shapes.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom 96px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+border-radius: 15px;
+}
+
+.download-extension-card:not(:last-child){
+  margin-right: 34px;
+}
+
+.download-extension-card:nth-child(2){
+  transform: translateY(40px);
+}
+
+.download-extension-card:nth-child(3){
+  transform: translateY(80px);
+}
+
+.download-extension-img {
+  width: 105px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+
+.download-extension-header {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.25px;
+}
+
+.download-extension-text {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 15px;
+line-height: 28px;
+opacity: 0.5;
 }
