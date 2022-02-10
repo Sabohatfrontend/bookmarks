@@ -232,6 +232,7 @@ line-height: 28px;
 }
 
 .site-nav-link{
+  display: block;
   white-space: nowrap;
   text-decoration: none;
   color: var(--color-txt);
