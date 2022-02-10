@@ -164,6 +164,11 @@ line-height: 28px;
   opacity: 0.6;
 }
 
+*:focus{
+  outline: 2px dashed var(--red-clr);
+  outline-offset: 3px;
+}
+
 /* SITE-HEADING-TEXT */
 .site-header-text-wrapper{
   max-width: 540px;
