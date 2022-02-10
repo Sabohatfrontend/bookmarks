@@ -96,7 +96,7 @@ img{
 }
 
 .button {
-  padding: 8px 28px 7px 30px;
+  padding: 12px 32px 11px 34px;
   text-transform: uppercase;
   background-color: var(--red-clr);
   font-size: 13px;
@@ -105,8 +105,9 @@ img{
 }
 
 .contact-button {
-  padding: 10px 24px;
+  padding: 8px 22px;
   font-size: 14px;
+line-height: 28px;
   letter-spacing: 0.25px;
   background-color: var(--red-clr);
 }
@@ -129,6 +130,11 @@ img{
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.25px;
+}
+
+.button-download{
+  padding-left: 34px;
+  padding-right: 33px;
 }
 
 .button-grey{
@@ -314,6 +320,7 @@ img{
 .features-navbtn {
   display: flex;
   justify-content: center;
+  margin-bottom: 73px;
 }
 
 .feaatures-navbtn-wrap {
@@ -322,7 +329,6 @@ img{
   padding: 0 10px 25px;
   text-align: center;
   border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
-  margin-bottom: 73px;
 }
 
 .features-navbtn-active{
@@ -589,6 +595,7 @@ letter-spacing: -0.1px;
   padding: 10px 20px;
   letter-spacing: 0.25px;
   font-size: 14px;
+  line-height: 28px;
   border-radius: 5px;
   border: none;
   margin-right: 16px;
